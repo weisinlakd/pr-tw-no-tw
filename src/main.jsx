@@ -7,12 +7,13 @@ import ThemeSwitcher from './components/themeSwitcher';
 
 import './index.css';
 import './flags.css';
-import App from './App';
+import App from './App2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <PrimeReactProvider value={{ unstyled: true, pt: Tailwind }}>
+        {/* <PrimeReactProvider value={{ unstyled: true, pt: Tailwind }}> */}
+        <PrimeReactProvider>
         <ThemeSwitcher />
         <App />
         </PrimeReactProvider>
